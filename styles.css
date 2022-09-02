@@ -16,6 +16,10 @@
     to { opacity: 1 }
 }
 
+.fade-in-bottom {
+    animation-name: fadeInBottom;
+}
+
 /*
     http://meyerweb.com/eric/tools/css/reset/
     v2.0 | 20110126
@@ -69,6 +73,7 @@ table {
 body {
     background-color: #D29E77;
     background-image: url('images/alchimia.png');
+    font-family: 'Euphorigenic', serif;
 }
 
 @media screen and (min-width: 1920px) {
@@ -85,24 +90,33 @@ body {
 }
 
 .main-box h1 {
-    font-family: 'Euphorigenic', serif;
     font-size: 10rem;
     text-shadow: 1px 4px #a58b79;
 }
 
-.main-box .socials {
-    margin-top: 3rem;
+.tagline-wrapper {
     display: flex;
-    animation-delay: 1.7s;
+    justify-content: space-between;
+}
+
+.socials {
+    margin-top: 2rem;
+    animation-delay: 2.4s;
     animation-duration: 1s;
     animation-fill-mode: both;
 }
 
-.main-box .socials a {
+.socials a {
     margin-right: 1rem;
     text-decoration: none;
 }
 
-.fade-in-bottom {
-    animation-name: fadeInBottom;
+.tagline {
+    margin-top: 0.55rem;
+    margin-right: 3.1rem;
+    font-size: 2.5rem;
+
+    animation-delay: 1.7s;
+    animation-duration: 1s;
+    animation-fill-mode: both;
 }
